@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="/resources/icons/icon.png">
+        <link rel="stylesheet" href="/designs/explore-css/explore_base.css">
+
+        <script src="/scripts/navigation.js"></script>
+        <script src="/scripts/time.js"></script>  
+        <title>SAND</title>
+    </head>
+    
+    <body>
+        <header>
+            <!--Return-->
+            <a href="homepage.html" class="return-btn">
+                <img src="/resources/icons/arrow_back.png" alt="Back">
+                <h2>Return</h2>
+            </a>
+
+            <!--Navigation-->
+            <div class="navigation">
+                <img src="/resources/icons/menu.png" height="40px" width="40px" id="menu-btn" onclick="dropbtn()">
+                <div class="nav-links" id="navLinks">
+                    <a href="#adventure">Adventure</a></li>
+                    <a href="#beaches">Beaches</a></li>
+                    <a href="#cuisine">Cuisine</a></li>
+                    <a href="#nightlife">Nightlife</a></li>
+                    <a href="#culture">Culture</a></li>
+                    <a href="#relaxation">Relaxation</a></li>
+                    <a href="#locations">Locations</a></li>
+                    <a href="#photography">Photography</a></li>
+                    <a href="contact.html">Contacts</a>
+                </div>
+            </div>
+
+            <!--Banner-->
+            <div class="banner-container">
+                <img src="/resources/images/A6.jpg" class="banner">
+                <div class="banner-overlay"></div>
+
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="location">
+                        <img src="/resources/icons/location.png" alt="Location Icon">
+                        <p>Philippines</p>
+                    </div>
+                    <img src="/resources/icons/sand.png">
+                    <h1>Start Your Boracay Adventure Here</h1>
+                    <p>Explore Smarter. Travel Better.</p>
+                </div>
+
+                <!--Clock-->
+                <div class="banner-clock">
+                    <div class="clock-icon-wrapper">
+                        <img src="/resources/icons/schedule.png" class="clock-icon" alt="Clock Icon">
+                        <div class="clock-text">
+                            <span id="current-time" class="time"></span>
+                            <span id="current-date" class="date"></span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#locations"><img src="/resources/icons/arrow_downwards.png" class="arrow-down"></a>
+            </div>
+        </header>
+
+        <main>
+            <!--Top Locations-->
+            <div class="main-location">
+                <div class="top-text">
+                    <span class="tag">Top Destinations</span>
+                    <h2>10 Must-Visit Locations</h2>
+                    <p>From world-famous beaches to hidden gems, these are the absolute best places to experience the magic of Boracay.</p>
+                </div>
+                <div class="top-destinations" id="locations">
+                    <div>
+                        <div class="top-card">
+                            <div class="hero-card">
+                                <div class="hero-media" style="background-image: url('/resources/images/A5.jpg');"></div>
+                                <div class="hero-overlay"></div>
+
+                                <div class="hero-content">
+
+                                    <div class="hero-topline">
+                                        <div class="category">
+                                            <img src="/resources/icons/location.png" class="pin">
+                                            Iconic Beach
+                                        </div>
+
+                                        <div class="badge">
+                                            <img src="/resources/icons/crown_black.png" class="crown">
+                                            #1 Most Popular
+                                        </div>
+                                    </div>
+
+                                    <h1 class="hero-title">White Beach</h1>
+
+                                    <p class="hero-desc">
+                                        The crown jewel of Boracay&dash;4 kilometers of pristine powder-white sand
+                                        and crystal-clear turquoise waters. This is where the magic happens.
+                                    </p>
+
+                                    <div class="pill-row">
+                                        <span class="pill-top-card">World&apos;s best sunset views</span>
+                                        <span class="pill-top-card">Beachfront dining</span>
+                                        <span class="pill-top-card">Safe swimming</span>
+                                    </div>
+
+                                    <a class="btn hero-btn" href="/webpages/plan-your-trip.html">
+                                        <img src="/resources/icons/award.png">
+                                        Must Visit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="travel-grid">
+                        <article class="card hero">
+                            <div class="card-media" style="background-image:url(/resources/images/Photo9.jpg);" role="img">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-topline">Landmark</span>
+                                    <span class="badge">&starf; Photo Spot</span>
+                                </div>
+                                <h3 class="card-title">Willy&apos;s Rock</h3>
+                                <p class="card-desc">
+                                    A natural volcanic rock formation featuring a grotto shrine — Boracay&apos;s most photographed landmark and a symbol of the island.
+                                </p>
+                                <div class="pill-row">
+                                    <span class="pill">Instagram-worthy spot</span>
+                                    <span class="pill">Accessible at low tide</span>
+                                    <span class="pill">Religious shrine</span>
+                                </div>
+
+                                <div class="card-actions">
+                                    <a href="/webpages/plan-your-trip.html"><p class="btn ghost">Must Visit</p></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card hero">
+                            <div class="card-media" style="background-image:url(/resources/images/Photo8.jpg);" role="img">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-topline">Natural Beach</span>
+                                    <span class="badge">&starf; Hidden Gem</span>
+                                </div>
+                                <h3 class="card-title">Puka Shell Beach</h3>
+                                <p class="card-desc">
+                                    A more secluded paradise on the northern tip with natural Puka shells. Perfect for those seeking tranquility away from the crowds.
+                                </p>
+                                <div class="pill-row">
+                                    <span class="pill">Perfect spot for swimming</span>
+                                    <span class="pill">Peaceful atmosphere</span>
+                                    <span class="pill">Shell collecting</span>
+                                </div>
+
+                                <div class="card-actions">
+                                    <a href="/webpages/plan-your-trip.html"><p class="btn ghost">Highly Recommended</p></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card hero">
+                            <div class="card-media" style="background-image:url(/resources/images/Photo7.jpg);" role="img">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-topline">Best Views</span>
+                                    <span class="badge">&starf; Viewpoint</span>
+                                </div>
+                                <h3 class="card-title">Mount Luho</h3>
+                                <p class="card-desc">
+                                    The highest point on the island at 100 meters, offering breathtaking 360-degree panoramic views of Boracay and surrounding islands.
+                                </p>
+
+                                <div class="pill-row">
+                                    <span class="pill">Photography paradise</span>
+                                    <span class="pill">Best island views</span>
+                                    <span class="pill">Sunrise & sunset</span>
+                                </div>
+
+                                <div class="card-actions">
+                                    <a href="/webpages/plan-your-trip.html"><p class="btn ghost">Must Visit</p></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="small-cards">
+
+                    <!-- Diniwid Beach -->
+                    <a href="plan-your-trip.html?place=Diniwid%20Beach" class="card-link">
+                        <div class="small-card">
+                            <img src="/resources/images/Photo5.jpg">
+                            <div class="smallcard-content">
+                                <div class="small-category">
+                                    <img src="/resources/icons/location_black.png" class="icon">
+                                    Secluded Beach
+                                </div>
+                                <h3 class="small-title">Diniwid Beach</h3>
+                                <p class="small-desc">
+                                    A small, intimate beach just north of White Beach. Less crowded and perfect for a romantic escape with stunning rock formations.
+                                </p>
+                                <ul class="small-features">
+                                    <li>Romantic setting</li>
+                                    <li>Boutique resorts</li>
+                                    <li>Quieter vibe</li>
+                                </ul>
+                                <div class="small-badge">
+                                    <img src="/resources/icons/premium_blue.png" class="icon">
+                                    Highly Recommended
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Ariel's Point -->
+                    <a href="plan-your-trip.html?place=Ariel%27s%20Point" class="card-link">
+                        <div class="small-card">
+                            <img src="/resources/images/Photo4.jpg">
+                            <div class="smallcard-content">
+                                <div class="small-category">
+                                    <img src="/resources/icons/location_black.png" class="icon">
+                                    Adventure Spot
+                                </div>
+                                <h3 class="small-title">Ariel's Point</h3>
+                                <p class="small-desc">
+                                    The ultimate adventure destination with cliff diving platforms ranging from 3 to 15 meters.
+                                </p>
+                                <ul class="small-features">
+                                    <li>5 diving platforms</li>
+                                    <li>Snorkeling</li>
+                                    <li>BBQ lunch included</li>
+                                </ul>
+                                <div class="small-badge">
+                                    <img src="/resources/icons/premium_blue.png" class="icon">
+                                    Must Visit
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- D'Mall -->
+                    <a href="plan-your-trip.html?place=D%27Mall" class="card-link">
+                        <div class="small-card">
+                            <img src="/resources/images/Photo3.jpg">
+                            <div class="smallcard-content">
+                                <div class="small-category">
+                                    <img src="/resources/icons/location_black.png" class="icon">
+                                    Shopping & Dining
+                                </div>
+                                <h3 class="small-title">D'Mall</h3>
+                                <p class="small-desc">
+                                    The vibrant heart of Boracay's commercial scene.
+                                </p>
+                                <ul class="small-features">
+                                    <li>200+ establishments</li>
+                                    <li>Souvenirs & crafts</li>
+                                    <li>Dining variety</li>
+                                </ul>
+                                <div class="small-badge">
+                                    <img src="/resources/icons/premium_blue.png" class="icon">
+                                    Highly Recommended
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Bulabog Beach -->
+                    <a href="plan-your-trip.html?place=Bulabog%20Beach" class="card-link">
+                        <div class="small-card">
+                            <img src="/resources/images/Photo1.jpg">
+                            <div class="smallcard-content">
+                                <div class="small-category">
+                                    <img src="/resources/icons/location_black.png" class="icon">
+                                    Water Sports Hub
+                                </div>
+                                <h3 class="small-title">Bulabog Beach</h3>
+                                <p class="small-desc">
+                                    World-class destination for kiteboarding and windsurfing.
+                                </p>
+                                <ul class="small-features">
+                                    <li>Kiteboarding paradise</li>
+                                    <li>Steady Amihan winds</li>
+                                    <li>Equipment rentals</li>
+                                </ul>
+                                <div class="small-badge">
+                                    <img src="/resources/icons/premium_blue.png" class="icon">
+                                    Highly Recommended
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Crystal Cove -->
+                    <a href="plan-your-trip.html?place=Crystal%20Cove%20Island" class="card-link">
+                        <div class="small-card">
+                            <img src="/resources/images/Photo6.jpg">
+                            <div class="smallcard-content">
+                                <div class="small-category">
+                                    <img src="/resources/icons/location_black.png" class="icon">
+                                    Island Destination
+                                </div>
+                                <h3 class="small-title">Crystal Cove Island</h3>
+                                <p class="small-desc">
+                                    Island with stunning caves and crystal-clear waters.
+                                </p>
+                                <ul class="small-features">
+                                    <li>Cave exploration</li>
+                                    <li>Cliff jumping</li>
+                                    <li>Snorkeling paradise</li>
+                                </ul>
+                                <div class="small-badge">
+                                    <img src="/resources/icons/premium_blue.png" class="icon">
+                                    Must Visit
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Ilig-Iligan -->
+                    <a href="plan-your-trip.html?place=Ilig-Iligan%20Beach" class="card-link">
+                        <div class="small-card">
+                            <img src="/resources/images/Photo2.jpg">
+                            <div class="smallcard-content">
+                                <div class="small-category">
+                                    <img src="/resources/icons/location_black.png" class="icon">
+                                    Hidden Beach
+                                </div>
+                                <h3 class="small-title">Ilig-Iligan Beach</h3>
+                                <p class="small-desc">
+                                    A peaceful gem on the southeastern shore of Boracay.
+                                </p>
+                                <ul class="small-features">
+                                    <li>Off the beaten path</li>
+                                    <li>Local experience</li>
+                                    <li>Scenic rock pools</li>
+                                </ul>
+                                <div class="small-badge">
+                                    <img src="/resources/icons/premium_blue.png" class="icon">
+                                    Recommended
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <section class="explore-section">
+                    <div class="explore-container">
+                        <h2 class="explore-title">Explore All Locations</h2>
+                        <p class="explore-subtitle">
+                            Each of these destinations offers a unique slice of paradise. Plan your itinerary to
+                            experience as many as you can!
+                        </p>
+                        <div class="explore-stats">
+                            <span><img src="/resources/icons/star_shine_black.png" class="inline-icon"> 5 Must-Visit spots</span>
+                            <span><img src="/resources/icons/premium_black.png" class="inline-icon"> 4 Highly Recommended</span>
+                            <span><img src="/resources/icons/location_black.png" class="inline-icon"> 2 Hidden Gems</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--Adventure Section-->
+            <section class="adventure" id="adventure">
+
+                <div class="adventure-section">
+
+                    <div class="adventure-image"></div>
+
+                    <div class="adventure-card">
+                        <div class="adventure-card-inner">
+
+                            <img src="/resources/icons/mountain.png" class="adv-icon">
+
+                            <h2 class="adv-title">Adventure Awaits</h2>
+
+                            <p class="adv-desc">
+                                Get your adrenaline pumping with world-class water sports and outdoor activities 
+                                that make Boracay a playground for thrill-seekers.
+                            </p>
+
+                            <div class="adv-grid">
+
+                                <div class="adv-activity-card">
+                                    <img src="/resources/icons/kite.png" class="adv-mini-icon">
+
+                                    <h4>Kiteboarding & Windsurfing</h4>
+                                    <p>Bulabog Beach — perfect winds Nov&dash;Apr</p>
+
+                                    <details class="adv-details">
+                                        <summary class="learn-btn">Learn More</summary>
+
+                                        <div class="adv-more">
+                                            <p>
+                                                Ride Boracay&apos;s steady trade winds with certified instructors
+                                                and premium safety gear.
+                                            </p>
+                                            <a href="contact.html" class="inquire-btn">Inquire</a>
+                                        </div>
+                                    </details>
+                                </div>
+
+                                <div class="adv-activity-card">
+                                    <img src="/resources/icons/waves.png" class="adv-mini-icon">
+
+                                    <h4>Parasailing</h4>
+                                    <p>Soar 200ft above crystal waters</p>
+
+                                    <details class="adv-details">
+                                        <summary class="learn-btn">Learn More</summary>
+
+                                        <div class="adv-more">
+                                            <p>
+                                                Enjoy breathtaking aerial views of Boracay while safely harnessed
+                                                with professional guides.
+                                            </p>
+                                            <a href="contact.html" class="inquire-btn">Inquire</a>
+                                        </div>
+                                    </details>
+                                </div>
+
+                                <div class="adv-activity-card">
+                                    <img src="/resources/icons/diving.png" class="adv-mini-icon">
+
+                                    <h4>Helmet Diving</h4>
+                                    <p>No certification required</p>
+
+                                    <details class="adv-details">
+                                        <summary class="learn-btn">Learn More</summary>
+
+                                        <div class="adv-more">
+                                            <p>
+                                                Walk underwater and interact with marine life using a special
+                                                air-fed diving helmet.
+                                            </p>
+                                            <a href="contact.html" class="inquire-btn">Inquire</a>
+                                        </div>
+                                    </details>
+                                </div>
+
+                                <div class="adv-activity-card">
+                                    <img src="/resources/icons/cliff.png" class="adv-mini-icon">
+
+                                    <h4>Cliff Diving</h4>
+                                    <p>Ariel&apos;s Point — jumps up to 15 meters</p>
+
+                                    <details class="adv-details">
+                                        <summary class="learn-btn">Learn More</summary>
+
+                                        <div class="adv-more">
+                                            <p>
+                                                Test your courage with guided cliff jumps into deep turquoise waters.
+                                            </p>
+                                            <a href="contact.html" class="inquire-btn">Inquire</a>
+                                        </div>
+                                    </details>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Beaches Section-->
+            <div class="top-text">
+                <img src="/resources/icons/waves_black.png" class="beach-icon" id="beaches">
+                <h2>Paradise Beaches</h2>
+                <p>Each beach offers its own unique charm and character</p>
+            </div>            
+
+            <div class="beach-section">
+                <div class="beach-grid">
+
+                    <a href="plan-your-trip.html?place=White Beach" class="beach-link">
+                        <div class="beach-card">
+                            <img src="/resources/images/Photo10.jpg" class="beach-img">
+                            <h3>White Beach</h3>
+                            <p>4km of powdery white sand &dash; perfect for swimming, sunsets, and dining.</p>
+                            <span class="tag"><p><strong>Main attraction</strong></p></span>
+                            <span class="tag"><p><strong>Family-friendly</strong></p></span>
+                        </div>
+                    </a>
+
+                    <a href="plan-your-trip.html?place=Puka Shell Beach" class="beach-link">
+                        <div class="beach-card">
+                            <img src="/resources/images/Photo8.jpg" class="beach-img">
+                            <h3>Puka Shell Beach</h3>
+                            <p>Quiet northern beach with natural Puka shells and peaceful atmosphere.</p>
+                            <span class="tag"><p><strong>Secluded</strong></p></span>
+                            <span class="tag"><p><strong>Shell collecting</strong></p></span>
+                        </div>
+                    </a>
+
+                    <a href="plan-your-trip.html?place=Bulabog Beach" class="beach-link">
+                        <div class="beach-card">
+                            <img src="/resources/images/Photo1.jpg" class="beach-img">
+                            <h3>Bulabog Beach</h3>
+                            <p>Steady eastern winds — ideal for kiteboarding and windsurfing.</p>
+                            <span class="tag"><p><strong>Water sports</strong></p></span>
+                            <span class="tag"><p><strong>Adventure hub</strong></p></span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!--Cuisine Section-->
+            <div class="cuisine-group">
+                <div class="cuisine">
+                    <section class="cuisine-section" id="cuisine">
+
+                        <div class="cuisine-image"></div>
+
+                        <div class="cuisine-card">
+                            <div class="cuisine-card-inner">
+
+                                <img src="/resources/icons/food.png" class="cuisine-icon">
+
+                                <h2 class="cuisine-title">Culinary Journey</h2>
+
+                                <p class="cuisine-desc">
+                                    From fresh seafood grilled on the beach to international fine dining,
+                                    Boracay's food scene is as diverse as its visitors.
+                                </p>
+
+                                <div class="cuisine-item">
+                                    <img src="/resources/icons/fish.png" class="cuisine-mini-icon">
+                                    <div>
+                                        <h4>Fresh Seafood</h4>
+                                        <p>Daily catches grilled to perfection, from fish to prawns and squid</p>
+                                    </div>
+                                </div>
+
+                                <div class="cuisine-item">
+                                    <img src="/resources/icons/fire.png" class="cuisine-mini-icon">
+                                    <div>
+                                        <h4>Filipino Favorites</h4>
+                                        <p>Try adobo, sisig, halo-halo and local specialties at D'Talipapa market</p>
+                                    </div>
+                                </div>
+
+                                <div class="cuisine-item">
+                                    <img src="/resources/icons/grill.png" class="cuisine-mini-icon">
+                                    <div>
+                                        <h4>Global Cuisine</h4>
+                                        <p>Italian, Korean, Japanese, Mediterranean &dash; hundred+ restaurants to explore</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <section class="most-visited-cuisine">
+                <div class="top-text cuisine-text">
+                    <h2>Top 6 Boracay Restaurant</h2>
+                </div>   
+                <div class="side-scroll">
+
+                    <div class="scroll-container">
+
+                        <div class="scroll-item">
+                            <img src="/resources/images/Resto1st.jpg" alt="The Pig Out Bistro" class="resto-images">
+                            <div class="scroll-text">
+                                <p><strong>The Pig Out Bistro</strong></p>
+                                <a href="plan-your-trip.html?place=The Pig Out Bistro" class="locate-btn">
+                                    <button><img src="/resources/icons/location.png">Locate</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item">
+                            <img src="/resources/images/Resto2nd.jpg" alt="Los Indios Bravos Boracay" class="resto-images">
+                            <div class="scroll-text">
+                                <p><strong>Los Indios Bravos Boracay</strong></p>
+                                <a href="plan-your-trip.html?place=Los Indios Bravos Boracay" class="locate-btn">
+                                    <button><img src="/resources/icons/location.png">Locate</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item">
+                            <img src="/resources/images/Resto3rd.jpg" alt="Sunny Side Café" class="resto-images">
+                            <div class="scroll-text">
+                                <p><strong>Sunny Side Café</strong></p>
+                                <a href="plan-your-trip.html?place=Sunny Side Café" class="locate-btn">
+                                    <button><img src="/resources/icons/location.png">Locate</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item">
+                            <img src="/resources/images/Resto4th.jpg" alt="Lemoni Café and Restaurant" class="resto-images">
+                            <div class="scroll-text">
+                                <p><strong>Lemoni Café and Restaurant</strong></p>
+                                <a href="plan-your-trip.html?place=Lemoni Café and Restaurant" class="locate-btn">
+                                    <button><img src="/resources/icons/location.png">Locate</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item">
+                            <img src="/resources/images/Resto5th.jpg" alt="Dos Mestizos" class="resto-images">
+                            <div class="scroll-text">
+                                <p><strong>Dos Mestizos</strong></p>
+                                <a href="plan-your-trip.html?place=Dos Mestizos" class="locate-btn">
+                                    <button><img src="/resources/icons/location.png">Locate</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item">
+                            <img src="/resources/images/Resto6th.jpg" alt="Smoke Resto" class="resto-images">
+                            <div class="scroll-text">
+                                <p><strong>Smoke Resto</strong></p>
+                                <a href="plan-your-trip.html?place=Smoke Resto" class="locate-btn">
+                                    <button><img src="/resources/icons/location.png">Locate</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--Nightlife Section-->
+            <section class="nightlife-section" id="nightlife">
+
+                <div class="nightlife-top">
+                    <img src="/resources/icons/nightlife.png" class="nightlife-icon">
+                    <h2 class="nightlife-title">When the Sun Goes Down</h2>
+                    <p class="nightlife-sub">
+                        Boracay transforms into a vibrant nightlife destination with something for everyone
+                    </p>
+                </div>
+
+                <div class="nightlife-grid">
+
+                    <a class="nightlife-card" href="plan-your-trip.html">
+                        <img src="/resources/icons/fire.png" class="nightlife-card-icon">
+                        <h3>Fire Dancing Shows</h3>
+                        <p>Mesmerizing performances on White Beach every evening</p>
+                    </a>
+
+                    <a class="nightlife-card" href="plan-your-trip.html">
+                        <img src="/resources/icons/note.png" class="nightlife-card-icon">
+                        <h3>Beach Bars & Clubs</h3>
+                        <p>Epic, Club Galaxy, Juice Bar — dance until dawn</p>
+                    </a>
+
+                    <a class="nightlife-card" href="plan-your-trip.html">
+                        <img src="/resources/icons/coffee.png" class="nightlife-card-icon">
+                        <h3>Chill Lounges</h3>
+                        <p>Acoustic music, cocktails, and peaceful beachfront vibes</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="photography-section" id="photography">
+
+                <div class="photography-header">
+                    <img src="/resources/icons/camera_black.png" class="photo-icon" alt="Camera icon">
+                    <h2>Best Photography Spots</h2>
+                    <p>Capture Boracay&apos;s most iconic views — from golden sunsets to dramatic landscapes</p>
+                </div>
+
+                <div class="photography-grid">
+
+                    <div class="photo-card">
+                        <div class="photo-img" style="background-image:url('/resources/images/Photo7.jpg');"></div>
+                        <div class="photo-content">
+                            <h3>Mount Luho Viewdeck</h3>
+                            <p>Panoramic island views perfect for sunrise and sunset shots.</p>
+                            <span class="photo-tag">Best Viewpoint</span>
+                        </div>
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-img" style="background-image:url('/resources/images/Photo9.jpg');"></div>
+                        <div class="photo-content">
+                            <h3>Willy&apos;s Rock</h3>
+                            <p>Boracay&apos;s most iconic landmark — dramatic at low tide.</p>
+                            <span class="photo-tag">Iconic Landmark</span>
+                        </div>
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-img" style="background-image:url('/resources/images/A6.jpg');"></div>
+                        <div class="photo-content">
+                            <h3>White Beach Sunset</h3>
+                            <p>Golden skies, sailboats, and reflections on calm waters.</p>
+                            <span class="photo-tag">Sunset Spot</span>
+                        </div>
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-img" style="background-image:url('/resources/images/Photo8.jpg');"></div>
+                        <div class="photo-content">
+                            <h3>Puka Shell Beach</h3>
+                            <p>Natural textures, shells, and fewer crowds for clean shots.</p>
+                            <span class="photo-tag">Natural Beach</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="photography-footer">
+                    <p>
+                        Tip: Visit early morning or golden hour for the best lighting and fewer people.
+                    </p>
+                    <a href="#locations" class="photo-btn">Explore Photo Locations</a>
+                </div>
+
+            </section>
+
+            <!-- Wellness Section -->
+            <section class="wellness" id="relaxation">
+
+                <div class="wellness-card">
+                    <div class="wellness-card-inner">
+
+                        <img src="/resources/icons/star_shine.png" class="well-icon" alt="Wellness icon">
+
+                        <h2 class="well-title">Wellness & Relaxation</h2>
+
+                        <p class="well-desc">
+                            Escape into tranquility with rejuvenating spa rituals,
+                            healing therapies, and wellness experiences crafted
+                            to restore balance and harmony.
+                        </p>
+
+                        <div class="well-grid">
+
+                            <div class="well-item">
+                                <img src="/resources/icons/star_shine.png" class="well-mini-icon" alt="">
+                                <div>
+                                    <h4>Spa Massages</h4>
+                                    <p>Deep calm + therapeutic healing</p>
+                                </div>
+                            </div>
+
+                            <div class="well-item">
+                                <img src="/resources/icons/mindful.png" class="well-mini-icon" alt="">
+                                <div>
+                                    <h4>Aromatherapy</h4>
+                                    <p>Relaxing essential oil blends</p>
+                                </div>
+                            </div>
+
+                            <div class="well-item">
+                                <img src="/resources/icons/relax.png" class="well-mini-icon" alt="">
+                                <div>
+                                    <h4>Yoga Sessions</h4>
+                                    <p>Sunrise beachfront classes</p>
+                                </div>
+                            </div>
+
+                            <div class="well-item">
+                                <img src="/resources/icons/heart_wave.png" class="well-mini-icon" alt="">
+                                <div>
+                                    <h4>Holistic Healing</h4>
+                                    <p>Mind&dash;body&dash;soul therapies</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Culture Section -->
+            <section class="culture-section" id="culture">
+
+                <div class="culture-overlay"></div>
+
+                <div class="culture-container">
+
+                    <div class="culture-text">
+                        <span class="culture-tag">Island Heritage</span>
+                        <h2 class="culture-title">Living Culture of Boracay</h2>
+                        <p class="culture-desc">
+                            Beyond the beaches lies a rich island heritage shaped by the Ati people,
+                            vibrant traditions, music, dance, and community life that continues to
+                            define Boracay&apos;s soul.
+                        </p>
+
+                        <div class="culture-highlights">
+
+                            <div class="culture-item">
+                                <img src="/resources/icons/people.png" alt="">
+                                <div>
+                                    <h4>Ati Indigenous Roots</h4>
+                                    <p>Discover the original settlers of Boracay and their enduring traditions.</p>
+                                </div>
+                            </div>
+
+                            <div class="culture-item">
+                                <img src="/resources/icons/note_2.png" alt="">
+                                <div>
+                                    <h4>Festivals & Performances</h4>
+                                    <p>Experience Ati-Atihan dances, drum rituals, and local celebrations.</p>
+                                </div>
+                            </div>
+
+                            <div class="culture-item">
+                                <img src="/resources/icons/handcraft.png" alt="">
+                                <div>
+                                    <h4>Local Crafts</h4>
+                                    <p>Handwoven baskets, shell art, and souvenirs made by island artisans.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="plan-your-trip.html" class="culture-btn">Explore Cultural Spots</a>
+                    </div>
+
+                    <div class="culture-cards">
+
+                        <div class="culture-card">
+                            <img src="/resources/images/PhotoCulture2.jpg" alt="">
+                            <span>Ati Village</span>
+                        </div>
+
+                        <div class="culture-card">
+                            <img src="/resources/images/PhotoCulture1.png" alt="">
+                            <span>Local Festivals</span>
+                        </div>
+
+                        <div class="culture-card">
+                            <img src="/resources/images/PhotoCulture3.png" alt="">
+                            <span>Handcrafted Art</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-wrapper">
+
+                    <div class="footer-section">
+                        <h3>About SAND</h3>
+                        <p>SAND provides streamlined tourism information for Boracay, offering guides, directories, and insights to help you explore smarter and travel better.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="homepage.html">Home</a></li>
+                            <li><a href="contact.html">Contacts</a></li>
+                            <li><a href="homepage.html#Explore">Explore</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: boracaysand8@gmail.com</p>
+                        <p>Phone: (+639)92&dash;016&dash;2949</p>
+                        <p>Boracay, Philippines</p>
+                    </div>
+
+                    <div class="footer-section footer-logo">
+                        <img src="/resources/icons/sand.png" alt="SAND Logo">
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p> &copy; 2025 SAND &dash; Boracay Travel Guide. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

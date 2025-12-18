@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plan Your Trip | SAND Boracay</title>
+<link rel="icon" href="/resources/icons/icon.png" />
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="/designs/plan.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+
+</style>
+</head>
+
+    <body>
+        <header>
+            <a href="homepage.html" class="return-btn"><img src="/resources/icons/arrow_back.png"><span>Return</span></a>
+        </header>
+
+        <div class="main">
+        <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <h2 id="placeTitle">Boracay Island</h2>
+                <p>Discover attractions, food, hotels, nightlife, culture, and peaceful spots — all in one interactive map.</p>
+
+                <div class="place-box"><h3>Selected</h3><span id="selectedLocation">Boracay, Philippines</span></div>
+
+                <div class="place-box"><h3>Attractions</h3>
+                    <div class="link-item" onclick="focusPlace('White Beach')">White Beach</div>
+                    <div class="link-item" onclick="focusPlace('Puka Shell Beach')">Puka Shell Beach</div>
+                    <div class="link-item" onclick="focusPlace('Bulabog Beach')">Bulabog Beach</div>
+                    <div class="link-item" onclick="focusPlace('Crystal Cove Island')">Crystal Cove Island</div>
+                    <div class="link-item" onclick="focusPlace('Willys Rock')">Willy's Rock</div>
+                    <div class="link-item" onclick="focusPlace('Diniwid Beach')">Diniwid Beach</div>
+                    <div class="link-item" onclick="focusPlace('Ariels Point')">Ariel's Point</div>
+                    <div class="link-item" onclick="focusPlace('D Mall')">D' Mall</div>
+                </div>
+
+                <div class="place-box"><h3>Restaurants</h3>
+                    <div class="link-item" onclick="focusResto('Sunny Side Café')">Sunny Side Café</div>
+                    <div class="link-item" onclick="focusResto('Dos Mestizos')">Dos Mestizos</div>
+                    <div class="link-item" onclick="focusResto('The Pig Out Bistro')">The Pig Out Bistro</div>
+                    <div class="link-item" onclick="focusResto('Lemoni Café and Restaurant')">Lemoni Café and Restaurant</div>
+                    <div class="link-item" onclick="focusResto('Smoke Resto')">Smoke Resto</div>
+                    <div class="link-item" onclick="focusResto('Los Indios Bravos Boracay')">Los Indios Bravos Boracay</div>
+                </div>
+
+                <div class="place-box"><h3>Best Hotels</h3>
+                    <div class="link-item" onclick="focusHotel('Henann Lagoon Resort')">Henann Lagoon Resort</div>
+                    <div class="link-item" onclick="focusHotel('Discovery Shores')">Discovery Shores</div>
+                    <div class="link-item" onclick="focusHotel('Shangri-La Boracay')">Shangri-La Boracay</div>
+                </div>
+
+                <div class="place-box"><h3>Nightlife</h3>
+                    <div class="link-item" onclick="focusNightlife('Epic Boracay')">Epic Boracay</div>
+                    <div class="link-item" onclick="focusNightlife('Om Bar Boracay')">Om Bar</div>
+                    <div class="link-item" onclick="focusNightlife('Wave Bar & Lounge')">Wave Bar & Lounge</div>
+                </div>
+
+                <div class="place-box"><h3>Relax Spots</h3>
+                    <div class="link-item" onclick="focusRelax('Ilig-Iligan Beach')">Ilig-Iligan Beach</div>
+                    <div class="link-item" onclick="focusRelax('Mount Luho')">Mount Luho Viewdeck</div>
+                </div>
+
+                <div class="place-box"><h3>Culture & History</h3>
+                    <div class="link-item" onclick="focusCulture('Motag Living Museum')">Motag Living Museum</div>
+                    <div class="link-item" onclick="focusCulture('Ati Village')">Ati Village</div>
+                    <span style="font-size:12px;opacity:.75;display:block;margin-top:8px">Ati-Atihan Influence • Best visited: Jan&dash;Feb</span>
+                </div>
+
+                <div class="place-box"><h3>Local Tour Guides</h3>
+                    <div class="guides">
+                    <div class="guide-card"><h4>Juan Tours </h4><span>Island Hopping</span><a href="tourguide.html"><strong>(View Profile)</strong></a></div>
+                    <div class="guide-card"><h4>Ate Liza </h4><span>Food & Culture</span><a href="tourguide.html"><strong>(View Profile)</strong></a></div>
+                    <div class="guide-card"><h4>Boracay Pro </h4><span>Nightlife & Bars</span><a href="tourguide.html"><strong>(View Profile)</strong></a></div>
+                    <div class="guide-card"><h4>Island Roots </h4><span>Eco Tours</span><a href="tourguide.html"><strong>(View Profile)</strong></a></div>
+                    </div>
+                </div>
+
+                <button class="btn primary" onclick="locateUser()"> Use My Location</button>
+                <button class="btn secondary" onclick="resetMap()"> Reset</button>
+            </aside>
+
+        <!-- MAP -->
+            <div id="map"></div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-wrapper">
+
+                    <div class="footer-section">
+                        <h3>About SAND</h3>
+                        <p>SAND provides streamlined tourism information for Boracay, offering guides, directories, and insights to help you explore smarter and travel better.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="homepage.html">Home</a></li>
+                            <li><a href="contact.html">Contacts</a></li>
+                            <li><a href="homepage.html#Explore">Explore</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: boracaysand8@gmail.com</p>
+                        <p>Phone: (+639)92&dash;016&dash;2949</p>
+                        <p>Boracay, Philippines</p>
+                    </div>
+
+                    <div class="footer-section footer-logo">
+                        <img src="/resources/icons/sand.png" alt="SAND Logo">
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p> &copy; 2025 SAND &dash; Boracay Travel Guide. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+<script>
+/* ================= DATA ================= */
+
+const places={
+  "White Beach":[11.9674,121.9248],
+  "Puka Shell Beach":[11.9851,121.9362],
+  "Bulabog Beach":[11.9705,121.9290],
+  "Crystal Cove Island":[11.9448,121.9461],
+  "Willy's Rock":[11.9669,121.9227],
+  "Diniwid Beach":[11.9698,121.9196],
+  "Ariel's Point":[11.9257,121.9093],
+  "D Mall":[11.9656,121.9243]
+};
+
+const restaurants={
+  "Sunny Side Café":[11.9671,121.9236],
+  "Dos Mestizos":[11.9660,121.9245],
+  "The Pig Out Bistro":[11.9666,121.9241],
+  "Lemoni Café and Restaurant":[11.9649,121.9238],
+  "Smoke Resto":[11.9655,121.9240],
+  "Los Indios Bravos Boracay":[11.9659,121.9244]
+};
+
+/* ✔ MATCHES HTML NAMES */
+const hotels={
+  "Henann Lagoon Resort":[11.9648,121.9233],
+  "Discovery Shores":[11.9693,121.9177],
+  "Shangri-La Boracay":[11.9766,121.9149]
+};
+
+const nightlife={
+  "Epic Boracay":[11.9658,121.9246],
+  "Om Bar Boracay":[11.9665,121.9243],
+  "Wave Bar & Lounge":[11.9684,121.9229]
+};
+
+const relax={
+  "Ilig-Iligan Beach":[11.9866,121.9333],
+  "Mount Luho":[11.9790,121.9240]
+};
+
+const culture={
+  "Motag Living Museum":[11.9593,121.9325],
+  "Ati Village":[11.9631,121.9276]
+};
+
+/* ✔ TOUR GUIDES */
+const guides={
+  "Juan Tours":[11.9678,121.9245],
+  "Ate Liza":[11.9662,121.9239],
+  "Boracay Pro":[11.9658,121.9251],
+  "Island Roots":[11.9689,121.9227]
+};
+
+/* ================= MAP ================= */
+
+const center=[11.9674,121.9248];
+
+const map=L.map('map',{
+  minZoom:13,
+  maxZoom:18
+}).setView(center,14);
+
+map.setMaxBounds([[11.90,121.88],[12.02,121.98]]);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  attribution:'© OpenStreetMap'
+}).addTo(map);
+
+/* ================= MARKERS ================= */
+
+function addMarkers(data,label){
+  Object.entries(data).forEach(([name,coords])=>{
+    L.marker(coords)
+      .addTo(map)
+      .bindPopup(`<strong>${name}</strong><br>${label}`);
+  });
+}
+
+addMarkers(places,'Attraction');
+addMarkers(restaurants,'Restaurant');
+addMarkers(hotels,'Hotel');
+addMarkers(nightlife,'Nightlife');
+addMarkers(relax,'Relax Spot');
+addMarkers(culture,'Cultural Site');
+addMarkers(guides,'Tour Guide');
+
+/* ================= CONTROLS ================= */
+
+function focus(obj,name,zoom){
+  if(!obj[name]) return;
+  map.setView(obj[name],zoom);
+  placeTitle.textContent=name;
+  selectedLocation.textContent=name;
+}
+
+const focusPlace     = n => focus(places,n,16);
+const focusResto     = n => focus(restaurants,n,17);
+const focusHotel     = n => focus(hotels,n,16);
+const focusNightlife = n => focus(nightlife,n,17);
+const focusRelax     = n => focus(relax,n,16);
+const focusCulture   = n => focus(culture,n,17);
+const focusGuide     = n => focus(guides,n,17);
+
+/* ================= USER LOCATION ================= */
+
+function locateUser(){
+  if(!navigator.geolocation) return;
+
+  navigator.geolocation.getCurrentPosition(pos=>{
+    const userLoc=[pos.coords.latitude,pos.coords.longitude];
+    L.marker(userLoc)
+      .addTo(map)
+      .bindPopup('You are here')
+      .openPopup();
+    map.setView(userLoc,15);
+  });
+}
+
+function resetMap(){
+  map.setView(center,14);
+  placeTitle.textContent='Boracay Island';
+  selectedLocation.textContent='Boracay, Philippines';
+}
+</script>
+
+    </body>
+</html>

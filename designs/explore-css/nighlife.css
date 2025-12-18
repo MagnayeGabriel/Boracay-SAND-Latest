@@ -1,0 +1,90 @@
+.nightlife-section {
+    width: 100%;
+    padding: 80px 0;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ),
+    url('/resources/images/Photo12.jpg');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.nightlife-top {
+    margin-bottom: 40px;
+}
+
+.nightlife-icon {
+    width: 60px;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+.nightlife-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.nightlife-sub {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.nightlife-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    width: 90%;
+    margin: auto;
+}
+
+.nightlife-card {
+    padding: 35px 25px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nightlife-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.12);
+}
+
+.nightlife-card-icon {
+    width: 45px;
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+
+.nightlife-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.nightlife-card p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .nightlife-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nightlife-section {
+        background-attachment: scroll;
+        background-position: center;
+    }
+}

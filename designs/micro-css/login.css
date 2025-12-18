@@ -1,0 +1,89 @@
+/* Login Modal Overlay */
+.login-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Login Card */
+.login-card {
+    background: #ffffff;
+    padding: 40px;
+    width: 360px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    animation: fadeScale 0.3s ease;
+}
+
+@keyframes fadeScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.login-card img {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    color: #1f5c63;
+}
+
+.login-card input {
+    width: 90%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1f5c63;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-card button:hover {
+    background-color: #163f43;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #777;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}

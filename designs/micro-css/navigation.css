@@ -1,0 +1,58 @@
+@import url(universal.css);
+
+.navigation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.navigation img#menu-btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 100px;
+    background: var(--color1);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.nav-links a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color2);
+    transition: 0.2s;
+}
+.nav-links a:hover{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color4);
+    transition: 0.2s;
+}
+#menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-right: 40px;
+}
+
+@media (max-width: 900px) {
+
+    .navigation {
+       right: -20px;
+    }
+
+    .navigation img#menu-btn {
+        width: 40px;
+        height: 40px;
+    }
+}

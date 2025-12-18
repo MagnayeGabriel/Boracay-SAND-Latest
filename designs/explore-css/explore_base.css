@@ -1,0 +1,174 @@
+@import url(/designs/micro-css/universal.css);
+@import url(/designs/micro-css/footer.css);
+@import url(/designs/micro-css/navigation.css);
+@import url(/designs/micro-css/return.css);
+@import url(/designs/micro-css/clock.css);
+@import url(location.css);
+@import url(adventure.css);
+@import url(beaches.css);
+@import url(cuisine.css);
+@import url(nighlife.css);
+@import url(wellness.css);
+@import url(culture.css);
+@import url(photography.css);
+
+body{
+  background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Montserrat";
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner-container img.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    color: var(--color1);
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+.logo h1 {
+    max-width: 1000px;
+    font-size: 25px;
+}
+
+.logo-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-buttons button {
+    padding: 12px 25px;
+    font-size: 20px;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Montserrat";
+    text-shadow: var(--text-shadow);
+}
+
+.logo-buttons button.explr{
+    padding: 12px 61px;
+}
+
+.logo-buttons button:hover {
+    background-color: var(--color4);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.location img {
+    width: 25px;
+}
+
+.location p {
+    margin: 0;
+    font-size: 25px;
+    color: var(--color1);
+    text-shadow: var(--text-shadow);
+}
+
+.arrow-down {
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    z-index: 10;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+.top-text {
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.top-text h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+    font-family: 'RockSalt';
+}
+
+.top-text p {
+    text-align: center;
+    margin: 10px 0;
+    color: var(--color2);
+    font-size: 25px;
+    text-shadow: var(--text-shadow);
+}
+
+.link-card {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-card:hover {
+    transform: translateY(-12px) scale(1.02);
+}
+
+.link-card .learn-btn {
+    margin-top: 14px;
+    display: inline-block;
+    align-self: flex-start;
+}

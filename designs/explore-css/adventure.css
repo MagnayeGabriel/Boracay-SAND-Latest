@@ -1,0 +1,233 @@
+.adventure {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.15),
+            rgba(255, 255, 255, 0.04),
+            rgba(255, 255, 255, 0.35)
+        ),
+        url(/resources/images/Photo14.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.adventure-section {
+    width: 100%;
+    padding-right: 35vw;
+}
+
+.adventure-card {
+    padding: 70px 55px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.adventure-card-inner {
+    max-width: 1100px;
+}
+
+.adv-icon {
+    width: 78px;
+    margin-bottom: 18px;
+    opacity: 0.95;
+}
+
+.adv-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
+.adv-desc {
+    font-size: 18px;
+    line-height: 1.65;
+    margin-bottom: 40px;
+    color: rgba(255,255,255,0.95);
+    max-width: 520px;
+}
+
+.adv-grid {
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    padding-bottom: 18px;
+    scroll-snap-type: x mandatory;
+    align-items: flex-start;
+}
+
+.adv-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.adv-grid::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.35);
+    border-radius: 10px;
+}
+
+.adv-activity-card {
+    min-width: 285px;
+    max-width: 285px;
+    height: 370px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    padding: 28px;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.45s cubic-bezier(.2,.8,.2,1),
+        box-shadow 0.45s ease;
+}
+
+.adv-activity-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            120deg,
+            rgba(255,181,113,0.35),
+            rgba(14,108,118,0.35)
+        );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.adv-activity-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+}
+
+.adv-activity-card:hover::before {
+    opacity: 1;
+}
+
+.adv-mini-icon {
+    width: 30px;
+    margin-bottom: 10px;
+    opacity: 0.95;
+}
+
+.adv-activity-card h4 {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 14px 0 8px;
+    letter-spacing: 0.4px;
+}
+
+.adv-activity-card p {
+    font-size: 14px;
+    line-height: 1.55;
+    opacity: 0.88;
+}
+
+.adv-details {
+    margin-top: 16px;
+}
+
+.adv-details summary {
+    list-style: none;
+}
+
+.learn-btn {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.25s ease, border 0.25s ease;
+}
+
+.learn-btn:hover {
+    background: rgba(255,255,255,0.18);
+    border-color: rgba(255,255,255,0.85);
+}
+
+.adv-more {
+    margin-top: 14px;
+    color: rgba(255,255,255,0.95);
+    max-height: 120px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.adv-more::-webkit-scrollbar {
+    width: 4px;
+    display: none;
+}
+
+.adv-details[open] .adv-more {
+    animation: dropDown 0.3s ease;
+}
+
+@keyframes dropDown {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.inquire-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 20px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 22px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.25s ease;
+}
+
+.inquire-btn:hover {
+    background: #f2f2f2;
+}
+
+@media (max-width: 1400px) {
+    .adventure-section {
+        padding-right: 20vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .adventure-section {
+        padding-right: 0;
+    }
+
+    .adv-desc {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .adventure-card {
+        padding: 35px 28px;
+    }
+
+    .adv-title {
+        font-size: 32px;
+    }
+}

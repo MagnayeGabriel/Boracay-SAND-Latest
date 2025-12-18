@@ -1,0 +1,15 @@
+@import url(fonts.css);
+:root{
+    --color1: white;
+    --color2: black;
+    --color4: grey;
+    --color5: rgb(6, 6, 9);
+    --color3: rgb(64, 64, 64);
+    --accent:#3c4bdd;
+    --muted:#6b6f9a;
+    --card-bg:#ffffff;
+    --soft:#eef2ff;
+    --text-shadow: 1px 1px 50px black;
+    --text-shadow2: 1px 1px 5px black;
+    --box-shadow: 1px 1px 50px black;
+}

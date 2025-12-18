@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="resources/icons/icon.png">
+        <link rel="stylesheet" href="designs/landingpage.css">
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/time.js"></script>
+        <script src="scripts/login.js"></script>
+        <title>SAND</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Banner -->
+            <div class="banner-container">
+                <img src="resources/images/A25.png" class="banner">
+                <div class="banner-overlay"></div>
+
+                <div class="logo">
+                    <div class="location">
+                        <img src="resources/icons/location.png" alt="Location Icon">
+                        <p>Philippines</p>
+                    </div>
+                    <img src="resources/icons/sand.png">
+                    <h1>Start Your Boracay Adventure Here</h1>
+                    <p>Explore Smarter. Travel Better.</p>
+                    <div class="logo-buttons">
+                        <button class="explr" onclick="openLogin()">Login</button>
+                    </div>
+                </div>
+
+                <div class="banner-clock">
+                    <div class="clock-icon-wrapper">
+                        <img src="resources/icons/schedule.png" class="clock-icon" alt="Clock Icon">
+                        <div class="clock-text">
+                            <span id="current-time" class="time"></span>
+                            <span id="current-date" class="date"></span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#Experiences"><img src="resources/icons/arrow_downwards.png" class="arrow-down"></a>
+            </div>
+        </header>
+
+        <main>
+            <!--Experiences-->
+            <div class="top-text" id="Experiences">
+                <h2>Why Visit Boracay?</h2>
+                <p>Discover what makes this small island one of the most beloved destinations in the world</p>
+            </div>
+            <div class="info-section">
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <img src="resources/icons/award.png" alt="Icon">
+                        <div>
+                            <p class="card-label">World Recognition</p>
+                            <h2>Award-Winning Destination</h2>
+                        </div>
+                    </div>
+
+                    <p class="card-description">
+                        Consistently ranked among the world's best islands and beaches by international travel publications.
+                    </p>
+
+                    <span class="card-tag">Luxurious & Tranquil</span>
+
+                    <ul class="card-list">
+                        <li>Named Best Island in the World multiple times</li>
+                        <li>Top beach destination in Asia</li>
+                        <li>Featured in Travel + Leisure, Condé Nast</li>
+                        <li>Voted by millions of travelers globally</li>
+                        <li>Protected marine sanctuary status</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <img src="resources/icons/surfing.png" alt="Icon">
+                        <div>
+                            <p class="card-label">Natural Beauty</p>
+                            <h2>Pristine Paradise</h2>
+                        </div>
+                    </div>
+
+                    <p class="card-description">
+                        4 kilometers of powder-white sand beaches with turquoise waters and stunning sunsets.
+                    </p>
+
+                    <span class="card-tag">Balanced & Active</span>
+
+                    <ul class="card-list">
+                        <li>Powder-fine white sand beaches</li>
+                        <li>Crystal-clear turquoise waters</li>
+                        <li>Vibrant coral reefs and marine life</li>
+                        <li>Breathtaking sunset views daily</li>
+                        <li>Lush tropical island landscapes</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <img src="resources/icons/heart.png" alt="Icon">
+                        <div>
+                            <p class="card-label">Perfect For Everyone</p>
+                            <h2>Something for All Travelers</h2>
+                        </div>
+                    </div>
+
+                    <p class="card-description">
+                        Whether seeking adventure, relaxation, or culture, Boracay offers unforgettable experiences.
+                    </p>
+
+                    <span class="card-tag">Quiet & Natural</span>
+
+                    <ul class="card-list">
+                        <li>Family-friendly beaches and activities</li>
+                        <li>Romantic sunset experiences for couples</li>
+                        <li>Adventure sports for thrill-seekers</li>
+                        <li>Peaceful spots for solo travelers</li>
+                        <li>Rich local culture and hospitality</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="top-text">
+                <h2>Essential Travel Information</h2>
+                <p>Everything you need to know before and during your visit</p>
+            </div>  
+
+            <div class="travel-cards">
+
+                <div class="travel-card">
+                    <div class="travel-header">
+                        <img src="resources/icons/plane.png" alt="Getting There">
+                    </div>
+                    <h3>Getting There</h3>
+                    <ul>
+                        <li>Fly to Caticlan Airport (MPH) &dash; 10 mins to jetty</li>
+                        <li>Or Kalibo Airport (KLO) &dash; 1.5 &dash; 2 hours by van</li>
+                        <li>Boat ride from jetty: 15&dash;20 minutes</li>
+                        <li>Environmental fee: ₱75, Tourism tax: ₱75</li>
+                    </ul>
+                </div>
+
+                <div class="travel-card">
+                    <div class="travel-header">
+                        <img src="resources/icons/calendar.png" alt="Best Time">
+                    </div>
+                    <h3>Best Time to Visit</h3>
+                    <ul>
+                        <li>Dry Season: November to May (best weather)</li>
+                        <li>Peak Season: December to April</li>
+                        <li>Wet Season: June to October (lower prices)</li>
+                        <li>Amihan (cool winds): November to April</li>
+                    </ul>
+                </div>
+
+                <div class="travel-card">
+                    <div class="travel-header">
+                        <img src="resources/icons/sunny.png" alt="Weather">
+                    </div>
+                    <h3>Weather & Climate</h3>
+                    <ul>
+                        <li>Average temperature: 25&dash;32°C year-round</li>
+                        <li>Dry season: sunny, calm seas</li>
+                        <li>Wet season: occasional rain, stronger winds</li>
+                        <li>Water temperature: 26&dash;28°C</li>
+                    </ul>
+                </div>
+
+                <div class="travel-card">
+                    <div class="travel-header">
+                        <img src="resources/icons/credit.png" alt="Getting There">
+                    </div>
+                    <h3>Money & Costs</h3>
+                    <ul>
+                        <li>Currency: Philippine Peso (PHP)</li>
+                        <li>ATMs available at main stations</li>
+                        <li>Most places accept cards</li>
+                        <li>Bring cash for small vendors and tricycles</li>
+                    </ul>
+                </div>
+
+                <div class="travel-card">
+                    <div class="travel-header">
+                        <img src="resources/icons/shield.png" alt="Best Time">
+                    </div>
+                    <h3>Important Rules</h3>
+                    <ul>
+                        <li>No smoking on the beach</li>
+                        <li>No single-use plastics</li>
+                        <li>No drinking alcohol on the beach</li>
+                        <li>Respect environmental regulations</li>
+                    </ul>
+                </div>
+
+                <div class="travel-card">
+                    <div class="travel-header">
+                        <img src="resources/icons/info.png" alt="Weather">
+                    </div>
+                    <h3>Safety Tips</h3>
+                    <ul>
+                        <li>Generally very safe for tourists</li>
+                        <li>Drink only bottled water</li>
+                        <li>Use reef-safe sunscreen</li>
+                        <li>Check weather before water activities</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="top-text">
+                <h2>Essential Information</h2>
+                <p>Everything you need to know before your trip</p>
+            </div>
+
+            <div class="essential-info">
+
+                <div class="info-block">
+                    <h3>Location & Size</h3>
+                    <p>
+                        Boracay is a small island in Western Visayas, Philippines, about 7 kilometers long and 
+                        1 kilometer wide at its narrowest point. The main attraction is White Beach, a 
+                        4&dash;kilometer stretch of powdery white sand on the western side.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Best Time to Visit</h3>
+
+                    <p><strong>Dry Season (November to May):</strong> Best weather, calm seas, ideal for swimming and water sports. Peak season is December to April.</p>
+
+                    <p><strong>Wet Season (June to October):</strong> More rain and stronger winds. Hotels offer lower rates, but some water activities may be limited.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>How to Get There</h3>
+
+                    <p><strong>1. Fly to Caticlan Airport (MPH)</strong> &dash; Closest option, 10 minutes to jetty port</p>
+                    <p><strong>2. Fly to Kalibo International Airport (KLO)</strong> &dash; Cheaper flights, 1.5&dash;2 hours by van to jetty port</p>
+                    <p>From the jetty port, take a 15-minute boat ride to Boracay. Upon arrival, pay the environmental fee and tourism tax.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Popular Activities</h3>
+                    <ul>
+                        <li>Island hopping (Crystal Cove, Crocodile Island)</li>
+                        <li>Snorkeling and scuba diving</li>
+                        <li>Sunset sailing on traditional paraw boats</li>
+                        <li>Kiteboarding and windsurfing at Bulabog Beach</li>
+                        <li>Cliff diving at Ariel's Point</li>
+                        <li>Visit Puka Shell Beach and Mt. Luho viewpoint</li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h3>Important Rules</h3>
+
+                    <ul>
+                        <li>No smoking on the beach (designated areas only)</li>
+                        <li>No single-use plastics allowed</li>
+                        <li>No drinking alcohol on the beach</li>
+                        <li>No building sandcastles or digging large holes</li>
+                        <li>Cliff diving at Ariel's Point</li>
+                        <li>Respect environmental fees and regulations</li>
+                    </ul>
+                </div>    
+
+                <div class="info-block">
+                    <h3>Practical Tips</h3>
+
+                    <p><strong>Currency:</strong>  Philippine Peso (PHP). ATMs available, but bring cash for small vendors.</p>
+
+                    <p><strong>Transportation:</strong> Tricycles are the main transport around the island. Agree on fare before riding.</p>
+
+                    <p><strong>Internet:</strong> Most hotels and restaurants have WiFi. Local SIM cards available at the airport.</p>
+
+                    <p><strong>Safety:</strong> Generally safe for tourists. Drink bottled water and use reef-safe sunscreen to protect the marine life..</p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-wrapper">
+
+                    <div class="footer-section">
+                        <h3>About SAND</h3>
+                        <p>SAND provides streamlined tourism information for Boracay, offering guides, directories, and insights to help you explore smarter and travel better.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Explore</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: boracaysand8@gmail.com</p>
+                        <p>Phone: (+639)92&dash;016&dash;2949</p>
+                        <p>Boracay, Philippines</p>
+                    </div>
+
+                    <div class="footer-section footer-logo">
+                        <img src="resources/icons/sand.png" alt="SAND Logo">
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p> &copy; 2025 SAND &dash; Boracay Travel Guide. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Login Modal -->
+        <div id="loginModal" class="login-modal">
+            <div class="login-card">
+                <span class="close-btn" onclick="closeLogin()">&times;</span>
+
+                <img src="resources/icons/sand_black.png" alt="Logo">
+                <h2>Login</h2>
+
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+
+                <button onclick="login()">Login</button>
+                <div class="error" id="error-msg">Incorrect username or password.</div>
+            </div>
+        </div>
+
+    </body>
+</html>
